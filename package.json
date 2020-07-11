@@ -1,0 +1,44 @@
+{
+  "name": "graphql-generate-scalar-assets",
+  "version": "0.0.1",
+  "author": "Michael Gall (@wakelessnet)",
+  "license": "MIT",
+  "repository": "https://github.com/wakeless/graphql-generate-scalar-assets",
+  "description": "Generate assets based on scalars in graphql schema",
+  "main": "./src/index.js",
+  "keywords": [
+    "graphql",
+    "schema",
+    "flow",
+    "flowtype",
+    "relay",
+    "relaymodern",
+    "apollo",
+    "apollocodegen",
+    "js",
+    "generator",
+    "scalar"
+  ],
+  "files": [
+    "package.json",
+    "README.md",
+    "LICENSE",
+    "src",
+    "yarn.lock"
+  ],
+  "bin": {
+    "graphql-generate-scalar-assets": "./src/index.js"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "commander": "*",
+    "graphql": "^0.13.2",
+    "prettier": "*"
+  },
+  "devDependencies": {
+    "jest": "*"
+  }
+}

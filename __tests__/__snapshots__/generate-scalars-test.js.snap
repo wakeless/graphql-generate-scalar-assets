@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Generate assets should generate enums 1`] = `
+"// @flow
+
+/**
+ * THIS FILE IS AUTO GENERATED, DO NOT EDIT DIRECTLY.
+ */
+
+export const Query = {};
+
+export const BaseType = {
+  parentId: { type: 'ID', nullable: false, description: null },
+  clientMutationId: {
+    type: 'String',
+    nullable: true,
+    description: 'A unique identifier for the client performing the mutation.',
+  },
+  content: { type: 'String', nullable: false, description: null },
+  description: { type: 'String', nullable: true, description: null },
+  viewUrl: { type: 'URL', nullable: true, description: 'The URL used to View' },
+};
+
+export const BaseInput = {
+  parentId: { type: 'ID', nullable: true, description: null },
+};
+"
+`;

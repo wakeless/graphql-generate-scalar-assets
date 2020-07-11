@@ -1,0 +1,29 @@
+"""
+The description of the Base Type
+"""
+type BaseType {
+  parentId: ID!
+
+  """
+  A unique identifier for the client performing the mutation.
+  """
+  clientMutationId: String
+  content: String!
+  description: String
+
+  """
+  The URL used to View
+  """
+  viewUrl: URL
+}
+
+scalar URL
+
+type Query {
+  base: BaseType
+}
+
+input BaseInput {
+  parentId: ID
+}
+
