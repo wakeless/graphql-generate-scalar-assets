@@ -37,6 +37,6 @@ if (UserStatuses.type == "Boolean") {
 
 
 
-A good amount of this code has been lifted from: (graphql-generate-flow-schema-assets)[https://github.com/zth/graphql-generate-flow-schema-assets] this isn't really a
+A good amount of this code has been lifted from: [graphql-generate-flow-schema-assets](https://github.com/zth/graphql-generate-flow-schema-assets) this isn't really a
 fork, so hasn't been forked in the true sense of the word.
 
