@@ -16,7 +16,7 @@ program
   )
   .parse(process.argv);
 
-(async function() {
+(async function () {
   let schema;
 
   try {

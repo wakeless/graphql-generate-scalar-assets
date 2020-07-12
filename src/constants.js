@@ -1,6 +1,6 @@
 const prettierConfig = {
   singleQuote: true,
-  parser: "babel"
+  parser: "babel",
 };
 
 const fileHeader = `// @flow
@@ -12,5 +12,5 @@ const fileHeader = `// @flow
 
 module.exports = {
   prettierConfig,
-  fileHeader
+  fileHeader,
 };

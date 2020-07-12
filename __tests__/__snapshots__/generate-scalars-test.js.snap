@@ -19,6 +19,7 @@ export const BaseType = {
   content: { type: 'String', nullable: false, description: null },
   description: { type: 'String', nullable: true, description: null },
   viewUrl: { type: 'URL', nullable: true, description: 'The URL used to View' },
+  customerEnum: { type: 'BaseEnum', nullable: true, description: null },
 };
 
 export const BaseInput = {

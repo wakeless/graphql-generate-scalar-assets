@@ -11,33 +11,33 @@ function unpack(type) {
 
 function generateScalars(types) {
   let scalars = types
-    .filter(i => ["OBJECT", "INPUT_OBJECT"].includes(i.kind))
-    .filter(i => i.name.substr(0, 2) != "__")
+    .filter((i) => ["OBJECT", "INPUT_OBJECT"].includes(i.kind))
+    .filter((i) => i.name.substr(0, 2) != "__")
     .reduce((acc, baseType) => {
       let fields = (baseType.fields || baseType.inputFields || [])
-        .map(field => {
+        .map((field) => {
           const type = unpack(field.type);
-          if (type.kind == "SCALAR") {
+          if (["SCALAR", "ENUM"].includes(type.kind)) {
             return [
               field.name,
               {
                 type: type.name,
                 nullable: field.type.kind != "NON_NULL",
-                description: field.description
-              }
+                description: field.description,
+              },
             ];
           }
         })
-        .filter(i => i != null);
+        .filter((i) => i != null);
 
       return {
         ...acc,
         [baseType.name]: fields.reduce((acc, [key, fields]) => {
           return {
             ...acc,
-            [key]: fields
+            [key]: fields,
           };
-        }, {})
+        }, {}),
       };
     }, {});
 
