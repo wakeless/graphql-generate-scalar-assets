@@ -1,6 +1,6 @@
 {
   "name": "graphql-generate-scalar-assets",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "author": "Michael Gall (@wakelessnet)",
   "license": "MIT",
   "repository": "https://github.com/wakeless/graphql-generate-scalar-assets",
